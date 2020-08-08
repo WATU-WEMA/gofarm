@@ -21,37 +21,7 @@
        }
 
 </style>
-<script>
-         function checkform(form)
-       {
-           if(form.psd1.value!=""&& form.psd1.value==form.psd2.value){
-       if (form.username.value=="")
-       {
-        alert("error:username cant be blank");
-        form.username.focus();
-        document.getElementById("error").innerHTML="this is invalid name ";
-        return false;
-       }
 
-       if (form.psd1.value==form.username.value)
-       {
-       alert("password must be different from user name");
-       form.psd1.focus();
-       return false;
-       }
-
-       }
-
-
-
-       else
-       {
-           alert("error make sure you have entered a valid username and password");
-           form.psd1.focus();
-           return false;
-       }
-        alert("you have complete your registration");
-</script>
 </head>
 <body>
 <h1>Registration Form</h1>
